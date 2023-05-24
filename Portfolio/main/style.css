@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+body {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: #d8e0db;
+  font-family: "Major Mono Display", monospace;
+  line-height: 200%;
+  overflow-x: hidden;
+}
+
+span{
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker{
+    50%{
+      opacity: 0;
+    }
+  }
+
+.card{
+    background-color: #1f1f1f;
+    border-color: #525352;
+
+}
+
+.nav{
+    background-color: #111;
+}
+a{
+  text-decoration: none;
+  color: #d8e0db;
+}
+a:hover{
+  text-decoration: none;
+  color: #d8e0db;
+}

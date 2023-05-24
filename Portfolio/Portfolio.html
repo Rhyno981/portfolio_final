@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="first_line">Hello World!</p>
+        <br>
+        <br>
+        <p class="second_line">Welcome to my career portfolio!</p>
+        <a href="main/index.html" class="button btn-grow third_line" id="btn1">
+            <div class="button__line"></div>
+            <div class="button__line"></div>
+            <span class="button__text">begin</span>
+            <div class="button__drow1"></div>
+            <div class="button__drow2"></div>
+          </a>
+    </div>
+
+    <script>
+        const div1 = document.getElementsByClassName('second_line')[0];
+        const button = document.getElementsByClassName('third_line')[0];
+        button.style.display = "none";
+        div1.addEventListener("animationend", reveal);
+
+        function reveal() {
+            button.style.display = "block";
+            button.style.margin="0.5rem auto"
+        }
+        button.addEventListener("click", ani);
+        function ani(){
+            button.classList.add("grow");
+        }
+    </script>
+</body>
+</html>
